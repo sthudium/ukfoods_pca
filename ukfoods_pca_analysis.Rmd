@@ -40,3 +40,11 @@ heatmap(as.matrix(data))
 par(mar=c(20, 4, 4, 2))
 ```
 
+Lets try a ggplot
+
+```{r}
+ggplot(data, aes(x = England)) + geom_bar()
+
+```
+
+That could use some work lol

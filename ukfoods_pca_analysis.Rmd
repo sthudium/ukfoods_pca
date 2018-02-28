@@ -30,3 +30,13 @@ library(knitr)
 knitr::kable(data, caption = "The full UK foods data table")
 ```
 
+Make a heatmap of the data to aid in visualizing the data
+
+```{r}
+heatmap(as.matrix(data))
+
+## par changed
+
+par(mar=c(20, 4, 4, 2))
+```
+

@@ -8,6 +8,25 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r}
+data <- read.csv("~/Dropbox/bimm143_rproj/class08/UK_foods.csv")
+dim(data)
+head(data)
+```
 
+Set rownames
+```{r}
+rownames(data) <- data[,1]
+
+data <- data[, -1]
+
+head(data)
+```
+
+Use knitr to make a nice table of the data
+
+```{r}
+library(knitr)
+
+knitr::kable(data, caption = "The full UK foods data table")
 ```
 
